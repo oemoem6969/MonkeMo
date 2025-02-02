@@ -80,11 +80,10 @@ namespace MonkeModManager
         }
 
         #region ReleaseHandling
-
         private void LoadReleases()
         {
-            var decodedMods = JSON.Parse(DownloadSite("https://raw.githubusercontent.com/BzzzThe18th/MonkeModInfo/master/modinfo.json"));
-            var decodedGroups = JSON.Parse(DownloadSite("https://raw.githubusercontent.com/BzzzThe18th/MonkeModInfo/master/groupinfo.json"));
+            var decodedMods = JSON.Parse(DownloadSite("https://raw.githubusercontent.com/The-Graze/MonkeModInfo/refs/heads/master/modinfo.json"));
+            var decodedGroups = JSON.Parse(DownloadSite("https://raw.githubusercontent.com/The-Graze/MonkeModInfo/refs/heads/master/groupinfo.json"));
 
             var allMods = decodedMods.AsArray;
             var allGroups = decodedGroups.AsArray;
@@ -620,13 +619,13 @@ namespace MonkeModManager
         private void CheckVersion()
         {
             UpdateStatus("Checking for updates...");
-            Int16 version = Convert.ToInt16(DownloadSite("https://raw.githubusercontent.com/BzzzThe18th/MonkeModManager/master/update.txt"));
+            Int16 version = Convert.ToInt16(DownloadSite("https://raw.githubusercontent.com/The-Graze/MonkeModManager/refs/heads/master/update.txt"));
             if (version > CurrentVersion)
             {
                 this.Invoke((MethodInvoker)(() =>
                 {
                     MessageBox.Show("Your version of the mod installer is outdated! Please download the new one!", "Update available!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    Process.Start("https://github.com/BzzzThe18th/MonkeModManager/releases/latest");
+                    Process.Start("https://github.com/The-Graze/MonkeModManager/releases/latest");
                     Process.GetCurrentProcess().Kill();
                     Environment.Exit(0);
                 }));

@@ -14,6 +14,9 @@ using MonkeModManager.Internals.SimpleJSON;
 using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Security.Policy;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace MonkeModManager
 {
@@ -189,6 +192,34 @@ namespace MonkeModManager
 
         #region Installation
 
+        async void BepinexConfigFix()
+        {
+            if (!Directory.Exists(Path.Combine(InstallDirectory, @"BepInEx\config")))
+            {
+                UpdateStatus("Downloading Config");
+                Directory.CreateDirectory(Path.Combine(InstallDirectory, @"BepInEx\config"));
+                string conf = await GetConfigAsString("https://raw.githubusercontent.com/The-Graze/MonkeModInfo/master/BepInEx.cfg");
+                File.WriteAllText(Path.Combine(InstallDirectory, @"BepInEx\config\BepInEx.cfg"), conf);
+            }
+            else
+            {
+                UpdateStatus("Editing Config");
+                string conf = File.ReadAllText(Path.Combine(InstallDirectory, @"BepInEx\config\BepInEx.cfg"));
+                if (conf.Contains("HideManagerGameObject = false"))
+                {
+                    string fix = conf.Replace("HideManagerGameObject = false", "HideManagerGameObject = true");
+                    File.WriteAllText(Path.Combine(InstallDirectory, @"BepInEx\config\BepInEx.cfg"), fix);
+                }
+            }
+        }
+        static async Task<string> GetConfigAsString(string url)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                return await client.GetStringAsync(url);
+            }
+        }
+
         private void Install()
         {
             ChangeInstallButtonState(false);
@@ -228,6 +259,7 @@ namespace MonkeModManager
                     UpdateStatus(string.Format("Installed {0}!", release.Name));
                 }
             }
+            BepinexConfigFix();
             UpdateStatus("Install complete!");
             ChangeInstallButtonState(true);
 

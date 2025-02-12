@@ -17,6 +17,7 @@ using System.Drawing.Drawing2D;
 using System.Security.Policy;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Reflection;
 
 namespace MonkeModManager
 {
@@ -192,14 +193,20 @@ namespace MonkeModManager
 
         #region Installation
 
-        async void BepinexConfigFix()
+        void BepinexConfigFix()
         {
             if (!Directory.Exists(Path.Combine(InstallDirectory, @"BepInEx\config")))
             {
-                UpdateStatus("Downloading Config");
-                Directory.CreateDirectory(Path.Combine(InstallDirectory, @"BepInEx\config"));
-                string conf = await GetConfigAsString("https://raw.githubusercontent.com/The-Graze/MonkeModInfo/master/BepInEx.cfg");
-                File.WriteAllText(Path.Combine(InstallDirectory, @"BepInEx\config\BepInEx.cfg"), conf);
+                UpdateStatus("Adding Config");
+                var assembly = Assembly.GetExecutingAssembly();
+                using (Stream stream = assembly.GetManifestResourceStream("MonkeModManager.BepInEx.cfg"))
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    string conf = reader.ReadToEnd();
+                    string outputPath = Path.Combine(InstallDirectory, @"BepInEx\config\BepInEx.cfg");
+                    Directory.CreateDirectory(Path.GetDirectoryName(outputPath));
+                    File.WriteAllText(outputPath, conf);
+                }
             }
             else
             {

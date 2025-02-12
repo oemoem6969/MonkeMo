@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{D30E6357-6B15-4EDC-8DD3-8A6D040D83B2}|MonkeModManager\\MonkeModManager.csproj|solutionrelative:monkemodmanager\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D30E6357-6B15-4EDC-8DD3-8A6D040D83B2}|MonkeModManager\\MonkeModManager.csproj|C:\\Users\\Graze\\source\\repos\\MonkeModManager\\monkemodmanager\\formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D30E6357-6B15-4EDC-8DD3-8A6D040D83B2}|MonkeModManager\\MonkeModManager.csproj|solutionrelative:monkemodmanager\\formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D30E6357-6B15-4EDC-8DD3-8A6D040D83B2}|MonkeModManager\\MonkeModManager.csproj|C:\\Users\\Graze\\source\\repos\\MonkeModManager\\monkemodmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D30E6357-6B15-4EDC-8DD3-8A6D040D83B2}|MonkeModManager\\MonkeModManager.csproj|solutionrelative:monkemodmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D30E6357-6B15-4EDC-8DD3-8A6D040D83B2}|MonkeModManager\\MonkeModManager.csproj|C:\\Users\\Graze\\source\\repos\\MonkeModManager\\monkemodmanager\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D30E6357-6B15-4EDC-8DD3-8A6D040D83B2}|MonkeModManager\\MonkeModManager.csproj|solutionrelative:monkemodmanager\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D30E6357-6B15-4EDC-8DD3-8A6D040D83B2}|MonkeModManager\\MonkeModManager.csproj|C:\\Users\\Graze\\source\\repos\\MonkeModManager\\monkemodmanager\\formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D30E6357-6B15-4EDC-8DD3-8A6D040D83B2}|MonkeModManager\\MonkeModManager.csproj|solutionrelative:monkemodmanager\\formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D30E6357-6B15-4EDC-8DD3-8A6D040D83B2}|MonkeModManager\\MonkeModManager.csproj|C:\\Users\\Graze\\source\\repos\\MonkeModManager\\monkemodmanager\\monke.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
@@ -30,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,19 +50,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormMain.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Graze\\source\\repos\\MonkeModManager\\MonkeModManager\\FormMain.cs",
-              "RelativeDocumentMoniker": "MonkeModManager\\FormMain.cs",
-              "ToolTip": "C:\\Users\\Graze\\source\\repos\\MonkeModManager\\MonkeModManager\\FormMain.cs [Design]",
-              "RelativeToolTip": "MonkeModManager\\FormMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T08:06:14.091Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FormMain.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Graze\\source\\repos\\MonkeModManager\\MonkeModManager\\FormMain.Designer.cs",
               "RelativeDocumentMoniker": "MonkeModManager\\FormMain.Designer.cs",
@@ -85,14 +69,14 @@
               "RelativeDocumentMoniker": "MonkeModManager\\FormMain.cs",
               "ToolTip": "C:\\Users\\Graze\\source\\repos\\MonkeModManager\\MonkeModManager\\FormMain.cs",
               "RelativeToolTip": "MonkeModManager\\FormMain.cs",
-              "ViewState": "AgIAALQAAAAAAAAAAAAiwMgAAACFAAAAAAAAAA==",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAjwNAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-02T14:59:36.471Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Graze\\source\\repos\\MonkeModManager\\MonkeModManager\\Program.cs",
               "RelativeDocumentMoniker": "MonkeModManager\\Program.cs",
@@ -100,18 +84,20 @@
               "RelativeToolTip": "MonkeModManager\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T14:59:25.156Z"
+              "WhenOpened": "2025-02-02T14:59:25.156Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "monke.png",
               "DocumentMoniker": "C:\\Users\\Graze\\source\\repos\\MonkeModManager\\MonkeModManager\\monke.png",
               "RelativeDocumentMoniker": "MonkeModManager\\monke.png",
               "ToolTip": "C:\\Users\\Graze\\source\\repos\\MonkeModManager\\MonkeModManager\\monke.png",
               "RelativeToolTip": "MonkeModManager\\monke.png",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-02-02T14:59:21.368Z"
+              "WhenOpened": "2025-02-02T14:59:21.368Z",
+              "EditorCaption": ""
             }
           ]
         }

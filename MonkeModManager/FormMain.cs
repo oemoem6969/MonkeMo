@@ -625,6 +625,8 @@ namespace MonkeModManager
   
         private void NotFoundHandler()
         {
+            Directory.CreateDirectory(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"MonkeModManager/"));
+            File.WriteAllText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"MonkeModManager/path.txt"), "");
             bool found = false;
             while (found == false)
             {
@@ -640,6 +642,7 @@ namespace MonkeModManager
                         {
                             InstallDirectory = Path.GetDirectoryName(path);
                             textBoxDirectory.Text = InstallDirectory;
+                            File.WriteAllText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"MonkeModManager/path.txt"), path);
                             found = true;
                         }
                         else
@@ -712,6 +715,14 @@ namespace MonkeModManager
                         return;
                     }
                 }
+            }
+            if (File.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"MonkeModManager/path.txt")))
+            {
+                string path = File.ReadAllText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"MonkeModManager/path.txt"));
+                textBoxDirectory.Text = path;
+                InstallDirectory = path;
+                platformDetected = true;
+                return;
             }
             ShowErrorFindingDirectoryMessage();
         }

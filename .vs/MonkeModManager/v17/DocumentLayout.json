@@ -58,8 +58,7 @@
               "RelativeToolTip": "MonkeModManager\\FormMain.Designer.cs",
               "ViewState": "AgIAADwBAAAAAAAAAADgvxwAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T19:01:43.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T19:01:43.327Z"
             },
             {
               "$type": "Document",
@@ -67,9 +66,9 @@
               "Title": "FormMain.cs",
               "DocumentMoniker": "C:\\Users\\Graze\\source\\repos\\MonkeModManager\\MonkeModManager\\FormMain.cs",
               "RelativeDocumentMoniker": "MonkeModManager\\FormMain.cs",
-              "ToolTip": "C:\\Users\\Graze\\source\\repos\\MonkeModManager\\MonkeModManager\\FormMain.cs",
-              "RelativeToolTip": "MonkeModManager\\FormMain.cs",
-              "ViewState": "AgIAALsAAAAAAAAAAAArwNAAAAARAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Graze\\source\\repos\\MonkeModManager\\MonkeModManager\\FormMain.cs*",
+              "RelativeToolTip": "MonkeModManager\\FormMain.cs*",
+              "ViewState": "AgIAALMCAAAAAAAAAAApwMACAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-02T14:59:36.471Z",
               "EditorCaption": ""
@@ -84,8 +83,7 @@
               "RelativeToolTip": "MonkeModManager\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T14:59:25.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T14:59:25.156Z"
             },
             {
               "$type": "Document",
@@ -96,8 +94,7 @@
               "ToolTip": "C:\\Users\\Graze\\source\\repos\\MonkeModManager\\MonkeModManager\\monke.png",
               "RelativeToolTip": "MonkeModManager\\monke.png",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-02-02T14:59:21.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T14:59:21.368Z"
             }
           ]
         }

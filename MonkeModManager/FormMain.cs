@@ -24,8 +24,7 @@ namespace MonkeModManager
     public partial class FormMain : Form
     {
 
-        private const string BaseEndpoint = "https://api.github.com/repos/";
-        private const Int16 CurrentVersion = 5;
+        private const Int16 CurrentVersion = 6;
         private List<ReleaseInfo> releases;
         Dictionary<string, int> groups = new Dictionary<string, int>();
         private string InstallDirectory = @"";
@@ -172,23 +171,6 @@ namespace MonkeModManager
 
         }
 
-        private void UpdateReleaseInfo(ref ReleaseInfo release)
-        {
-            Thread.Sleep(100); //So we don't get rate limited by github
-
-            string releaseFormatted = BaseEndpoint + release.GitPath + "/releases";
-            var rootNode = JSON.Parse(DownloadSite(releaseFormatted))[0];
-            
-            release.Version = rootNode["tag_name"];
-            
-            var assetsNode = rootNode["assets"];
-            var downloadReleaseNode = assetsNode[release.ReleaseId];
-            release.Link = downloadReleaseNode["browser_download_url"];
-            
-            var uploaderNode = downloadReleaseNode["uploader"];
-            if (release.Author.Equals(String.Empty)) release.Author = uploaderNode["login"];
-        }
-
         #endregion // ReleaseHandling
 
         #region Installation
@@ -200,12 +182,14 @@ namespace MonkeModManager
                 UpdateStatus("Adding Config");
                 var assembly = Assembly.GetExecutingAssembly();
                 using (Stream stream = assembly.GetManifestResourceStream("MonkeModManager.BepInEx.cfg"))
-                using (StreamReader reader = new StreamReader(stream))
                 {
-                    string conf = reader.ReadToEnd();
-                    string outputPath = Path.Combine(InstallDirectory, @"BepInEx\config\BepInEx.cfg");
-                    Directory.CreateDirectory(Path.GetDirectoryName(outputPath));
-                    File.WriteAllText(outputPath, conf);
+                    using (StreamReader reader = new StreamReader(stream))
+                    {
+                        string conf = reader.ReadToEnd();
+                        string outputPath = Path.Combine(InstallDirectory, @"BepInEx\config\BepInEx.cfg");
+                        Directory.CreateDirectory(Path.GetDirectoryName(outputPath));
+                        File.WriteAllText(outputPath, conf);
+                    }
                 }
             }
             else
@@ -219,14 +203,6 @@ namespace MonkeModManager
                 }
             }
         }
-        static async Task<string> GetConfigAsString(string url)
-        {
-            using (HttpClient client = new HttpClient())
-            {
-                return await client.GetStringAsync(url);
-            }
-        }
-
         private void Install()
         {
             ChangeInstallButtonState(false);
@@ -661,7 +637,7 @@ namespace MonkeModManager
         private void CheckVersion()
         {
             UpdateStatus("Checking for updates...");
-            Int16 version = Convert.ToInt16(DownloadSite("https://raw.githubusercontent.com/The-Graze/MonkeModManager/refs/heads/master/update.txt"));
+            Int16 version = Convert.ToInt16(DownloadSite("https://raw.githubusercontent.com/The-Graze/MonkeModManager/master/update.txt"));
             if (version > CurrentVersion)
             {
                 this.Invoke((MethodInvoker)(() =>

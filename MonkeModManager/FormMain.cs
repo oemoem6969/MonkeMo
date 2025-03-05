@@ -24,7 +24,7 @@ namespace MonkeModManager
     public partial class FormMain : Form
     {
 
-        private const Int16 CurrentVersion = 6;
+        private const Int16 CurrentVersion = 7;
         private List<ReleaseInfo> releases;
         Dictionary<string, int> groups = new Dictionary<string, int>();
         private string InstallDirectory = @"";
@@ -186,13 +186,29 @@ namespace MonkeModManager
                     using (StreamReader reader = new StreamReader(stream))
                     {
                         string conf = reader.ReadToEnd();
+                        string FolderPath = Path.Combine(InstallDirectory, @"BepInEx\config\");
                         string outputPath = Path.Combine(InstallDirectory, @"BepInEx\config\BepInEx.cfg");
-                        Directory.CreateDirectory(Path.GetDirectoryName(outputPath));
+                        Directory.CreateDirectory(Path.GetDirectoryName(FolderPath));
+
                         File.WriteAllText(outputPath, conf);
                     }
                 }
             }
-            else
+            else if (!File.Exists(Path.Combine(InstallDirectory, @"BepInEx\config\BepInEx.cfg")))
+            {
+                UpdateStatus("MakingConfig");
+                var assembly = Assembly.GetExecutingAssembly();
+                using (Stream stream = assembly.GetManifestResourceStream("MonkeModManager.BepInEx.cfg"))
+                {
+                    using (StreamReader reader = new StreamReader(stream))
+                    {
+                        string conf = reader.ReadToEnd();
+                        string outputPath = Path.Combine(InstallDirectory, @"BepInEx\config\BepInEx.cfg");
+                        File.WriteAllText(outputPath, conf);
+                    }
+                }
+            }
+            else if(File.Exists(Path.Combine(InstallDirectory, @"BepInEx\config\BepInEx.cfg")))
             {
                 UpdateStatus("Editing Config");
                 string conf = File.ReadAllText(Path.Combine(InstallDirectory, @"BepInEx\config\BepInEx.cfg"));

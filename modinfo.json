@@ -23,7 +23,7 @@
          "name" : "iis Stupid Menu",
          "tag" : "",
          "gitPath" : "iiDk-the-actual/iis.Stupid.Menu",
-         "releaseId" : 2,
+         "releaseId" : 0,
          "author" : "Vadix",
          "group" : "Core",
          "dependencies" : [

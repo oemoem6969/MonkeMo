@@ -20,6 +20,17 @@
          ]
       },
       {
+         "name" : "iis.Stupid.Menu",
+         "tag" : "",
+         "gitPath" : "iiDk-the-actual/iis.Stupid.Menu",
+         "releaseId" : 0,
+         "author" : "Vadix",
+         "group" : "Core",
+         "dependencies" : [
+          "Newtonsoft.JSON",
+         ]
+      },
+      {
          "name" : "Monke Map Loader",
          "tag" : "",
          "gitPath" : "Vadix88/MonkeMapLoader",

@@ -44,7 +44,7 @@
     "download_url": "https://github.com/oemoem6969/GiveAllCosmetics/releases/download/GiveAllCosmetics/NameTags.dll"
   },
  {
-    "name": "TMO-Menu",
+    "name": "TMO Menu",
     "author": "𝖋1𝕭1",
     "version": "7.0",
     "group": "Mod Menu",
@@ -193,6 +193,13 @@
     "git_path": "lunakittyyy/OldHoldables",
     "group": "Cosmetic",
     "download_url": "https://github.com/lunakittyyy/OldHoldables/releases/download/2.4.2/OldHoldables.dll"
+  },
+  {
+    "name": "DestinyUnbanned (GreyServers)",
+    "author": "mooisrighthere",
+    "version": "1.0.1",
+    "group": "Unbanners",
+    "download_url": "https://github.com/oemoem6969/GiveAllCosmetics/releases/download/GiveAllCosmetics/DestinyUnbanned.dll"
   },
   {
     "name": "FuckOffMonkeySounds",

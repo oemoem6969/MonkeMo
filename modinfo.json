@@ -30,12 +30,11 @@
     "download_url": "https://github.com/oemoem6969/GiveAllCosmetics/releases/download/GiveAllCosmetics/Cosmetx.dll"
   },
  {
-    "name": "Bepinject-Auros",
-    "author": "Auros",
-    "version": "1.0.1",
-    "git_path": "Auros/Bepinject",
+    "name": "hoverboard",
+    "author": "Ollie",
+    "version": "1.0.0",
     "group": "Core",
-    "download_url": "https://github.com/Auros/Bepinject/releases/download/1.0.1/Bepinject-Auros.zip"
+    "download_url": "https://github.com/oemoem6969/GiveAllCosmetics/releases/download/GiveAllCosmetics/hovaboord.dll"
   },
  {
     "name": "Extenject",
@@ -44,14 +43,6 @@
     "git_path": "Auros/Bepinject",
     "group": "Core",
     "download_url": "https://github.com/Auros/Bepinject/releases/download/1.0.1/Extenject.zip"
-  },
-  {
-    "name": "Utilla",
-    "author": "Varoius(fix by IIDK)",
-    "version": "latest",
-    "git_path": "iiDk-the-actual/Utilla-Public",
-    "group": "Core",
-    "download_url": "https://github.com/iiDk-the-actual/Utilla-Public/releases/latest/download/Utilla.dll"
   },
   {
     "name": "LivSkins",

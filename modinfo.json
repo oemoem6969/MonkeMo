@@ -1,4 +1,4 @@
-﻿[
+﻿﻿[
   {
     "name": "BepInEx",
     "author": "BepInEx Team",
@@ -14,6 +14,14 @@
     "git_path": "iiDk-the-actual/iis.Stupid.Menu/",
     "group": "Gameplay",
     "download_url": "https://github.com/iiDk-the-actual/iis.Stupid.Menu/releases/latest/download/iis_Stupid_Menu.dll"
+  },
+ {
+    "name": "CosmicX",
+    "author": "emulamer",
+    "version": "1.0.0",
+    "git_path": "emulamer/GorillaLocomotion",
+    "group": "Core",
+    "download_url": "
   },
  {
     "name": "Bepinject-Auros",
@@ -33,11 +41,11 @@
   },
   {
     "name": "Utilla",
-    "author": "Varoius(alot people)",
-    "version": "1.6.16",
-    "git_path": "developer9998/Utilla",
+    "author": "Varoius(fix by IIDK)",
+    "version": "latest",
+    "git_path": "iiDk-the-actual/Utilla-Public",
     "group": "Core",
-    "download_url": "https://github.com/developer9998/Utilla/releases/download/March3/Utilla.dll"
+    "download_url": "https://github.com/iiDk-the-actual/Utilla-Public/releases/latest/download/Utilla.dll"
   },
   {
     "name": "LivSkins",

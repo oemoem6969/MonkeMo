@@ -8,6 +8,13 @@
     "download_url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_win_x64_5.4.23.2.zip"
   },
  {
+    "name": "TMPLoader",
+    "author": "BepInEx Team (Fix by tagmonke)",
+    "version": "1.0.0",
+    "group": "Core",
+    "download_url": "https://github.com/oemoem6969/GiveAllCosmetics/releases/download/GiveAllCosmetics/TMPLoader.zip"
+  },
+ {
     "name": "iis-Stupid-Menu",
     "author": "IIDK",
     "version": "latest",

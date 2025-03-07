@@ -37,13 +37,12 @@
     "download_url": "https://github.com/oemoem6969/GiveAllCosmetics/releases/download/GiveAllCosmetics/hovaboord.dll"
   },
  {
-    "name": "Extenject",
-    "author": "Auros",
-    "version": "1.0.1",
-    "git_path": "Auros/Bepinject",
-    "group": "Core",
-    "download_url": "https://github.com/Auros/Bepinject/releases/download/1.0.1/Extenject.zip"
-  },
+    "name": "TMO-Menu",
+    "author": "𝖋1𝕭1",
+    "version": "7.0",
+    "group": "Gameplay",
+    "download_url": "https://github.com/oemoem6969/GiveAllCosmetics/releases/download/GiveAllCosmetics/F.EE.v7.0.protected.dll"
+   },
   {
     "name": "LivSkins",
     "author": "Graze",

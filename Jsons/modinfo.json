@@ -1,4 +1,4 @@
-﻿﻿[
+﻿﻿﻿[
   {
     "name": "BepInEx",
     "author": "BepInEx Team",
@@ -57,6 +57,13 @@
     "version": "8.0",
     "group": "Mod Menus",
     "download_url": "https://github.com/oemoem6969/GiveAllCosmetics/releases/download/GiveAllCosmetics/F.EE.v8.0.protected.dll"
+   },
+   {
+    "name": "WalkSim",
+    "author": "?",
+    "version": "3.0",
+    "group": "Fun",
+    "download_url": "https://github.com/oemoem6969/GiveAllCosmetics/releases/download/GiveAllCosmetics/walksim.dll"
    },
    {
     "name": "LivSkins",

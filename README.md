@@ -5,8 +5,8 @@
     <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"></path>
 </svg>
           <span>Here is the official one</span>
-
-
+{
+  }
 This program will install custom mods into Gorilla Tag automatically, and can be re-run in order to update the mods
 
 This uses the github api to get the latest release of all these mods, so you know you'll always be getting the latest version!

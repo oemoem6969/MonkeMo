@@ -11,9 +11,9 @@ This uses the github api to get the latest release of all these mods, so you kno
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 6.0.x   | :white_check_mark: |
+| 7.0.x   | :white_check_mark: |
+| 6.0.x   | :x:                |
 | 5.0.x   | :x:                |
-| 4.0.x   | :x:                |
 | -4.0    | :x:                |
 
 ## To have your modded added

@@ -15,6 +15,14 @@
     "download_url": "https://github.com/oemoem6969/GiveAllCosmetics/releases/download/GiveAllCosmetics/TMPLoader.dll"
   },
   {
+    "name": "HideCityBundleStand",
+    "author": "Graze",
+    "version": "1.0.0",
+    "git_path": "The-Graze/Grate",
+    "group": "Core",
+    "download_url": "https://github.com/The-Graze/HideCityBundleStand/releases/download/1.0.0/HideCityBundleStand.dll"
+  },
+  {
     "name": "MinecraftBed",
     "author": ".defaultuser0",
     "version": "latest",

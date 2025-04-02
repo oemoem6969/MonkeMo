@@ -46,6 +46,13 @@
     "download_url": "https://github.com/oemoem6969/GiveAllCosmetics/releases/download/GiveAllCosmetics/GiveAllCosmetics.dll"
   },
   {
+    "name": "CosmicX",
+    "author": "Ollie",
+    "version": "1.0.0",
+    "group": "Cosmetic",
+    "download_url": "https://github.com/oemoem6969/GiveAllCosmetics/releases/download/GiveAllCosmetics/FixedCosmetx.dll"
+  },
+  {
     "name": "NameTags",
     "author": "kys(IIDK)",
     "version": "1.0.0",
